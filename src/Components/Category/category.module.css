@@ -1,0 +1,10 @@
+.category{
+    display: flex;
+    flex-direction: column;
+
+}
+.category section{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}

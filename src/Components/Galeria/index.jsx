@@ -4,6 +4,7 @@ import styles from './Galeria.module.scss'
 import fotos from './fotos.json'
 import open from "./open.png";
 import favorito from "./favorito.png"
+import Card from '../Card/card';
 export default function Galeria() {
   return (
     <section className={styles.galeria}>
@@ -13,11 +14,7 @@ export default function Galeria() {
             {fotos.map ((foto)=>{
                 return(
                     <li key={foto.id} className={styles.galeria__card}>
-                        <img className={styles.galeria__imagem} 
-                        src={foto.imagem}
-                        alt={foto.titulo} 
-                        />
-                        <p className={styles.galeria__descricao}>{foto.titulo}</p>
+                        <Card/>
                         <div>
                             <p>{foto.creditos}</p>
                             <span>
@@ -32,7 +29,8 @@ export default function Galeria() {
                 )
             })}
         </ul>
-        
+        <div>
+        </div>
     </section>
   )
 }

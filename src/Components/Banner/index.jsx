@@ -2,7 +2,7 @@ import React from 'react'
 import Menu from '../Menu'
 import styles from "./paginaInicial.module.scss"
 import banner from "./banner.png"
-import Galeria from '../Galeria'
+import MapGaleria from '../MapGaleria'
 export default function Banner() {
   return (
     <main>
@@ -15,7 +15,7 @@ export default function Banner() {
                     
                 </section>
                 <div> 
-                      <Galeria/>
+                      <MapGaleria/>
                     </div>
             </main>
       
