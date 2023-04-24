@@ -3,6 +3,7 @@ import Menu from '../Menu'
 import styles from "./paginaInicial.module.scss"
 import banner from "./banner.png"
 import MapGaleria from '../MapGaleria'
+import Eventos from '../Eventos/eventos.module'
 export default function Banner() {
   return (
     <main>
@@ -16,7 +17,12 @@ export default function Banner() {
                 </section>
                 <div> 
                       <MapGaleria/>
+                      
                     </div>
+                    <div>
+                      <Eventos />
+                    </div>
+
             </main>
       
   )
